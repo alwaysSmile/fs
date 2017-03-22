@@ -1,5 +1,5 @@
 //*******
-// //var fs = require('fs');
+// var fs = require('fs');
 // //Пример #1 (преобразование буфера в строку) console.log(data.toString());
 // //readFile - асинхронная Функция, которая принимает имя файла, в нашем случае
 // //__filename - это путь к файлу модуля и получает callback(функция-обработчик)
@@ -17,7 +17,7 @@
 
 
 //*******
-// //var fs = require('fs');
+// var fs = require('fs');
 // //Пример #2 (преобразование буфера в строку происходит внутри функции readFile)
 // fs.readFile(__filename, {encoding: 'utf-8'}, function (err, data) {//преобразование буфера в строку происходит внутри функции readFile
 //     if (err) {
@@ -30,9 +30,9 @@
 
 
 //*******
-// //var fs = require('fs');
+// var fs = require('fs');
 // //Пример #3 (если где-то ошибка)
-// //Считываю файл, которого не существует -> ENOENT
+// //Считываю файл, которого не существует (вернёт ошибку) -> ENOENT
 // fs.readFile("blablabla", {encoding: 'utf-8'}, function (err, data) {//преобразование буфера в строку происходит внутри функции readFile
 //     if (err) {
 //         if (err.code == 'ENOENT') {
